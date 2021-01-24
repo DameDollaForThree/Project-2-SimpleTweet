@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        tools:text="sampletext" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvScreenName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:autoLink="all"
+        tools:text="This is my tweet" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:text="30m" />
+
+    <Button
+        android:id="@+id/like"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="314dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/retweet_count"
+        android:background="@drawable/ic_baseline_thumb_up_24" />
+
+    <Button
+        android:id="@+id/retweet"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/share"
+        android:background="@drawable/ic_baseline_swap_horiz_24" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_baseline_undo_24" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/retweet"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/like"
+        android:textSize="12sp"
+        tools:text="2000" />
+
+    <TextView
+        android:id="@+id/retweet_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/retweet"
+        android:textSize="12sp"
+        tools:text="300" />
+</RelativeLayout>
