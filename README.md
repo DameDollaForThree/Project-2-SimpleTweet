@@ -43,7 +43,7 @@ GIF created with [Kap](https://getkap.co//).
 
 ## Notes
 
-- The first and second optional features have already been implemented in part1. This can be seen in the gif for part1.
+- The first and second optional features have already been implemented in part1. These can be seen in the gif for part1.
 
 ---
 
